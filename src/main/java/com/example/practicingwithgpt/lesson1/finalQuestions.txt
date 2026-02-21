@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------------------------------------
+
+Final Interview Rapid-Fire Questions 🔥
+
+Why Java is platform independent?
+
+Difference between == and .equals()?
+
+Why wrapper classes exist?
+
+Can primitive be null?
+
+What happens when stack memory is full?
+
+What is Garbage Collection?
+
+Is String stored in stack or heap?
+
+Difference between compile-time and runtime error?
+
+------------------------------------------------------------------------------------------------------------------------

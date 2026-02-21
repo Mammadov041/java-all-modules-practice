@@ -1,0 +1,44 @@
+------------------------------------------------------------------------------------------------------------------------
+
+8. Stack vs Heap (Basic)
+Stack
+
+Stores method calls
+
+Stores local variables
+
+Works LIFO
+
+Faster
+
+Thread-safe
+
+Heap
+
+Stores objects
+
+Shared between threads
+
+Managed by Garbage Collector
+
+public class Test {
+    public static void main(String[] args) {
+        int x = 10;              // stack
+        Person p = new Person(); // reference in stack, object in heap
+    }
+}
+Memory picture
+Stack → p (reference)
+Heap  → Person object
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+Where are objects stored? (Heap)
+
+Where are local variables stored? (Stack)
+
+Who manages heap memory? (Garbage Collector)
+
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+------------------------------------------------------------------------------------------------------------------------
+
+1. Introduction to Java
+
+Java is a:
+
+High-level programming language
+
+Object-Oriented
+
+Platform-independent (Write Once, Run Anywhere)
+
+Strongly typed
+
+Garbage-collected
+
+Why Java?
+
+Enterprise apps (banks, telecom)
+
+Backend services (Spring Boot)
+
+Android (historically)
+
+Huge ecosystem + stable
+
+How Java works
+.java  → (javac) →  .class  → (JVM) → runs on any OS
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+What does “Write Once, Run Anywhere” mean?
+
+Difference between JDK, JRE, JVM?
+The JDK is a complete software development kit for Java, the JRE is a subset of the JDK used for running Java programs,
+and the JVM is the core engine within the JRE that executes Java bytecode.
+
+Is Java 100% object-oriented? (❌ No – primitives exist)
+
+------------------------------------------------------------------------------------------------------------------------

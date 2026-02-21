@@ -1,0 +1,30 @@
+------------------------------------------------------------------------------------------------------------------------
+
+6. Null and Default Values
+Default values (class-level)
+class Test {
+    int a;
+    Integer b;
+}
+Type	Default
+int	0
+boolean	false
+object	null
+Local variables ❌ have NO default value
+int x;
+// System.out.println(x); // Compile-time error
+NullPointerException
+String name = null;
+System.out.println(name.length()); // NPE
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+Default value of int? (0)
+
+Default value of Integer? (null)
+
+Why local variables don’t get default values?
+
+------------------------------------------------------------------------------------------------------------------------

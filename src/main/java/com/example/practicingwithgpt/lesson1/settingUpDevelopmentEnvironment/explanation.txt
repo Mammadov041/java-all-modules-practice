@@ -1,0 +1,30 @@
+------------------------------------------------------------------------------------------------------------------------
+
+2. Setting Up the Development Environment
+Required tools
+
+JDK (Java Development Kit)
+
+IDE (IntelliJ IDEA / Eclipse / VS Code)
+
+Environment variable
+
+JAVA_HOME
+
+PATH
+
+Verify installation
+java -version
+javac -version
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+Difference between JDK and JRE?
+
+What is JAVA_HOME used for?
+
+Can Java run without JDK? (✔ Yes, with JRE)
+
+------------------------------------------------------------------------------------------------------------------------

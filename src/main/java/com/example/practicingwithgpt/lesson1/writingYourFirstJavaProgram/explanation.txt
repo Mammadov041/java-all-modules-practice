@@ -1,0 +1,26 @@
+------------------------------------------------------------------------------------------------------------------------
+
+4. Writing Your First Java Program
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello Java!");
+    }
+}
+Breakdown
+Part	Meaning
+public	accessible everywhere
+static	JVM can call without object
+void	returns nothing
+String[] args	command-line arguments
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+Why is main method static?
+
+Can we change the name of main method? (❌ No)
+
+Can main be overloaded? (✔ Yes, but JVM uses original signature)
+
+------------------------------------------------------------------------------------------------------------------------

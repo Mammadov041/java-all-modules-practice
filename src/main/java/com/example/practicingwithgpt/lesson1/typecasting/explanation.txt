@@ -1,0 +1,30 @@
+------------------------------------------------------------------------------------------------------------------------
+
+7. Typecasting (Implicit & Explicit)
+
+Implicit Casting (Widening)
+int a = 10;
+double b = a; // automatic
+
+Explicit Casting (Narrowing)
+double x = 10.5;
+int y = (int) x; // manual → 10
+
+Object Casting
+class Animal {}
+class Dog extends Animal {}
+
+Animal a = new Dog(); // upcasting
+Dog d = (Dog) a;      // downcasting
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+Difference between implicit and explicit casting?
+
+What is upcasting?
+
+Can downcasting cause exception? (✔ ClassCastException)
+
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,48 @@
+------------------------------------------------------------------------------------------------------------------------
+
+5. Variables and Data Types
+(Primitive & Wrapper)
+Primitive Types
+Type	Size
+int	    4 bytes
+long	8 bytes
+double	8 bytes
+float	4 bytes
+char	2 bytes
+boolean	1 bit
+int a = 10;
+double price = 99.9;
+boolean active = true;
+
+------------------------------------------------------------------------------------------------------------------------
+
+Wrapper Classes
+Primitive	Wrapper
+int	    Integer
+double	Double
+char	Character
+boolean	Boolean
+Integer x = 10;   // autoboxing
+int y = x;        // unboxing
+
+Why wrappers?
+
+Used in collections
+
+Can be null
+
+Have utility methods
+
+Integer num = null;
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+Difference between primitive and wrapper?
+
+Why collections don’t support primitives?
+
+What is autoboxing and unboxing?
+
+------------------------------------------------------------------------------------------------------------------------

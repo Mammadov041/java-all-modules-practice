@@ -1,0 +1,40 @@
+------------------------------------------------------------------------------------------------------------------------
+
+3. Understanding Classes and Objects
+Class
+
+A blueprint for creating objects.
+
+Object
+
+A real instance of a class.
+
+class Car {
+    String brand;
+    int speed;
+
+    void drive() {
+        System.out.println("Car is driving");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car(); // object creation
+        car.brand = "BMW";
+        car.speed = 120;
+        car.drive();
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+Interview Questions
+
+What is a class?
+
+What is an object?
+
+How many objects can be created from one class? (✔ Unlimited)
+
+------------------------------------------------------------------------------------------------------------------------
