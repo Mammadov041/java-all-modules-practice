@@ -1,0 +1,101 @@
+Alright, Lesson 15 time 😄
+This lesson is very important for backend & web interviews, especially if you’re touching Servlets, Spring MVC, or Spring Security.
+
+I’ll explain concepts → examples → interview questions for each topic.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1️⃣ Servlet Filters
+🔹 What is a Servlet Filter?
+
+A Filter is a component that:
+
+Intercepts HTTP requests and/or responses
+
+Executes before the request reaches a servlet
+
+Executes after the response leaves the servlet
+
+👉 Common uses:
+
+Logging
+
+Authentication & authorization
+
+Request validation
+
+CORS handling
+
+Encoding (UTF-8)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🔹 Filter Lifecycle
+
+init() – called once
+
+doFilter() – called for every request
+
+destroy() – called when app shuts down
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🔹 Filter Example
+import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import java.io.IOException;
+
+@WebFilter("/*")
+public class LoggingFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) {
+        System.out.println("Filter initialized");
+    }
+
+    @Override
+    public void doFilter(ServletRequest request,
+                         ServletResponse response,
+                         FilterChain chain)
+            throws IOException, ServletException {
+
+        System.out.println("Request received");
+
+        // Pass request to next filter or servlet
+        chain.doFilter(request, response);
+
+        System.out.println("Response sent");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("Filter destroyed");
+    }
+}
+
+📌 Important:
+chain.doFilter() → without this, request won’t reach servlet
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🔹 Filter vs Interceptor (Interview favorite)
+Filter	                        Interceptor
+Servlet-based	                Spring-based
+Runs before DispatcherServlet	Runs after DispatcherServlet
+Works with any servlet	        Only Spring MVC
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🔥 Interview Questions
+
+What is a Servlet Filter?
+
+Difference between Filter and Servlet?
+
+Difference between Filter and Interceptor?
+
+Can we have multiple filters? (Yes – filter chain)
+
+What happens if chain.doFilter() is not called?
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
